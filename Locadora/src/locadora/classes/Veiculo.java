@@ -1,4 +1,6 @@
 package locadora.classes;
+import java.math.BigDecimal;
+
 public abstract class Veiculo {
     protected int id;
     protected int chassi;
@@ -6,8 +8,8 @@ public abstract class Veiculo {
     protected String modelo;
     protected String dataFabricacao;
     protected String dataDeEntradaEstoque; 
-    protected float valorFipe;
-    protected float valorComprado;
+    protected BigDecimal valorFipe;
+    protected BigDecimal valorComprado;
 
     public Veiculo(final int id, 
         final int chassi, 
@@ -15,8 +17,8 @@ public abstract class Veiculo {
         final String modelo,
         final String dataFabricacao, 
         final String dataDeEntradaEstoque,
-        final float valorFipe,
-        final float valorComprado){
+        final BigDecimal valorFipe,
+        final BigDecimal valorComprado){
             this.id = id ;
             this.chassi = chassi;
             this.placa = placa;
@@ -74,21 +76,19 @@ public abstract class Veiculo {
 		this.dataDeEntradaEstoque = dataDeEntradaEstoque;
 	}
 
-	public float getValorFipe() {
+	public BigDecimal getValorFipe() {
 		return valorFipe;
 	}
 
-	public void setValorFipe(float valorFipe) {
+	public void setValorFipe(BigDecimal valorFipe) {
 		this.valorFipe = valorFipe;
 	}
 
-	public float getValorComprado() {
+	public BigDecimal getValorComprado() {
 		return valorComprado;
 	}
 
-	public void setValorComprado(float valorComprado) {
+	public void setValorComprado(BigDecimal valorComprado) {
 		this.valorComprado = valorComprado;
 	}
-    
-    
 }

@@ -1,7 +1,9 @@
 package locadora.classes;
+import java.math.BigDecimal;
+
 public class Carro extends Veiculo {
     private int cavalosPotencia;
-    private float cilindradaEmLitro;
+    private BigDecimal cilindradaEmLitro;
     private int isTurbo;
     private int tipoRodas;
     private MarcasCarro marca;
@@ -11,14 +13,14 @@ public class Carro extends Veiculo {
         final String placa, 
         final String modelo,
         final int cavalosPotencia,
-        final float cilindradaEmLitro,
+        final BigDecimal cilindradaEmLitro,
         final int isTurbo,
         final int tipoRodas,
         final MarcasCarro marca,
         final String dataFabricacao, 
         final String dataDeEntradaEstoque,
-        final float valorFipe,
-        final float valorComprado)
+        final BigDecimal valorFipe,
+        final BigDecimal valorComprado)
         {
     		super(id,chassi,placa,modelo,dataFabricacao,dataDeEntradaEstoque,valorFipe,valorComprado);
             this.cavalosPotencia = cavalosPotencia;
@@ -36,11 +38,11 @@ public class Carro extends Veiculo {
 		this.cavalosPotencia = cavalosPotencia;
 	}
 
-	public float getCilindradaEmLitro() {
+	public BigDecimal getCilindradaEmLitro() {
 		return cilindradaEmLitro;
 	}
 
-	public void setCilindradaEmLitro(float cilindradaEmLitro) {
+	public void setCilindradaEmLitro(BigDecimal cilindradaEmLitro) {
 		this.cilindradaEmLitro = cilindradaEmLitro;
 	}
 
@@ -67,7 +69,4 @@ public class Carro extends Veiculo {
 	public void setMarca(MarcasCarro marca) {
 		this.marca = marca;
 	}
-    
-    
-    
 }

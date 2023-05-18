@@ -1,5 +1,7 @@
 package locadora.classes;
 
+import java.math.BigDecimal;
+
 public class Moto extends Veiculo {
     private int cilindradaEmCc;
     private int aroDasRodas;
@@ -14,8 +16,8 @@ public class Moto extends Veiculo {
         final MarcasMoto marca,
         final String dataFabricacao, 
         final String dataDeEntradaEstoque,
-        final float valorFipe,
-        final float valorComprado){
+        final BigDecimal valorFipe,
+        final BigDecimal valorComprado){
     	super(id, chassi, placa, modelo, dataFabricacao, dataDeEntradaEstoque, valorFipe, valorComprado);
             this.cilindradaEmCc = cilindradaEmCc;
             this.aroDasRodas = aroDasRodas;
