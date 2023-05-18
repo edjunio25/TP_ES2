@@ -9,6 +9,8 @@ public abstract class Veiculo {
     protected float valorFipe;
     protected float valorComprado;
 
+    public Veiculo() {}
+
     public Veiculo(final int id, 
         final int chassi, 
         final String placa, 
