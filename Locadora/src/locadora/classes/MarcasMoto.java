@@ -1,4 +1,4 @@
-package TP_ES2.Classes;
+package locadora.classes;
 public enum MarcasMoto {
     //será que pode usar marcas reais a título de demonstração?
     BMW,

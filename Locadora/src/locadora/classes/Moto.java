@@ -1,4 +1,5 @@
-package TP_ES2.Classes;
+package locadora.classes;
+
 public class Moto extends Veiculo {
     private int cilindradaEmCc;
     private int aroDasRodas;
@@ -15,16 +16,36 @@ public class Moto extends Veiculo {
         final String dataDeEntradaEstoque,
         final float valorFipe,
         final float valorComprado){
-            this.id = id ;
-            this.chassi = chassi;
-            this.placa = placa;
-            this.modelo = modelo;
+    	super(id, chassi, placa, modelo, dataFabricacao, dataDeEntradaEstoque, valorFipe, valorComprado);
             this.cilindradaEmCc = cilindradaEmCc;
             this.aroDasRodas = aroDasRodas;
             this.marca = marca;
             this.dataFabricacao = dataFabricacao;
             this.dataDeEntradaEstoque = dataDeEntradaEstoque;
-            this.valorFipe = valorFipe;
-            this.valorComprado = valorComprado;
         }
+
+	public int getCilindradaEmCc() {
+		return cilindradaEmCc;
+	}
+
+	public void setCilindradaEmCc(int cilindradaEmCc) {
+		this.cilindradaEmCc = cilindradaEmCc;
+	}
+
+	public int getAroDasRodas() {
+		return aroDasRodas;
+	}
+
+	public void setAroDasRodas(int aroDasRodas) {
+		this.aroDasRodas = aroDasRodas;
+	}
+
+	public MarcasMoto getMarca() {
+		return marca;
+	}
+
+	public void setMarca(MarcasMoto marca) {
+		this.marca = marca;
+	}
+    
 }
