@@ -1,4 +1,4 @@
-package TP_ES2.Classes;
+package Classes;
 public enum MarcasCarro {
     //será que pode usar marcas reais a título de demonstração?
     Audi,

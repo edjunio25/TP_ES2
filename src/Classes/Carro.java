@@ -1,4 +1,7 @@
-package TP_ES2.Classes;
+package Classes;
+
+import java.time.LocalDate;
+
 public class Carro extends Veiculo {
     private int cavalosPotencia;
     private float cilindradaEmLitro;
@@ -15,8 +18,8 @@ public class Carro extends Veiculo {
         final int isTurbo,
         final int tipoRodas,
         final MarcasCarro marca,
-        final String dataFabricacao, 
-        final String dataDeEntradaEstoque,
+        final int anoFabricacao,
+        final LocalDate dataDeEntradaEstoque,
         final float valorFipe,
         final float valorComprado)
         {
@@ -29,9 +32,49 @@ public class Carro extends Veiculo {
             this.isTurbo = isTurbo;
             this.tipoRodas = tipoRodas;
             this.marca = marca;
-            this.dataFabricacao = dataFabricacao;
+            this.anoFabricacao = anoFabricacao;
             this.dataDeEntradaEstoque = dataDeEntradaEstoque;
             this.valorFipe = valorFipe;
             this.valorComprado = valorComprado;
         }
+
+    public int getCavalosPotencia() {
+        return cavalosPotencia;
+    }
+
+    public void setCavalosPotencia(int cavalosPotencia) {
+        this.cavalosPotencia = cavalosPotencia;
+    }
+
+    public float getCilindradaEmLitro() {
+        return cilindradaEmLitro;
+    }
+
+    public void setCilindradaEmLitro(float cilindradaEmLitro) {
+        this.cilindradaEmLitro = cilindradaEmLitro;
+    }
+
+    public int getIsTurbo() {
+        return isTurbo;
+    }
+
+    public void setIsTurbo(int isTurbo) {
+        this.isTurbo = isTurbo;
+    }
+
+    public int getTipoRodas() {
+        return tipoRodas;
+    }
+
+    public void setTipoRodas(int tipoRodas) {
+        this.tipoRodas = tipoRodas;
+    }
+
+    public MarcasCarro getMarca() {
+        return marca;
+    }
+
+    public void setMarca(MarcasCarro marca) {
+        this.marca = marca;
+    }
 }

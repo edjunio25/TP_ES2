@@ -1,4 +1,7 @@
-package TP_ES2.Classes;
+package Classes;
+
+import java.time.LocalDate;
+
 public class Moto extends Veiculo {
     private int cilindradaEmCc;
     private int aroDasRodas;
@@ -11,8 +14,8 @@ public class Moto extends Veiculo {
         final int cilindradaEmCc,
         final int aroDasRodas,
         final MarcasMoto marca,
-        final String dataFabricacao, 
-        final String dataDeEntradaEstoque,
+        final int anoFabricacao,
+        final LocalDate dataDeEntradaEstoque,
         final float valorFipe,
         final float valorComprado){
             this.id = id ;
@@ -22,9 +25,33 @@ public class Moto extends Veiculo {
             this.cilindradaEmCc = cilindradaEmCc;
             this.aroDasRodas = aroDasRodas;
             this.marca = marca;
-            this.dataFabricacao = dataFabricacao;
+            this.anoFabricacao = anoFabricacao;
             this.dataDeEntradaEstoque = dataDeEntradaEstoque;
             this.valorFipe = valorFipe;
             this.valorComprado = valorComprado;
-        }
+    }
+
+    public int getCilindradaEmCc() {
+        return cilindradaEmCc;
+    }
+
+    public void setCilindradaEmCc(int cilindradaEmCc) {
+        this.cilindradaEmCc = cilindradaEmCc;
+    }
+
+    public int getAroDasRodas() {
+        return aroDasRodas;
+    }
+
+    public void setAroDasRodas(int aroDasRodas) {
+        this.aroDasRodas = aroDasRodas;
+    }
+
+    public MarcasMoto getMarca() {
+        return marca;
+    }
+
+    public void setMarca(MarcasMoto marca) {
+        this.marca = marca;
+    }
 }
