@@ -17,6 +17,18 @@ public class RepositorioVeiculos {
         veiculos.add(veiculo);
     }
 
+    public void removerVeiculo(int idVeiculo) {
+        Optional veiculoOptional = veiculos.stream()
+                .filter(veiculo -> veiculo.getId() == idVeiculo)
+                .findFirst();
+
+        if (veiculoOptional.isEmpty()) {
+            throw new RuntimeException("Não foi encontrado veículo para o id especificado");
+        }
+
+        veiculos.remove(veiculoOptional.get());
+    }
+
     public Optional<Veiculo> buscarPorChassi(int chassi) {
         return veiculos.stream()
                 .filter(veiculo -> veiculo.getChassi() == chassi)
