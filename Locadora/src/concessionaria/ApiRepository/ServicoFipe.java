@@ -1,7 +1,5 @@
 package concessionaria.ApiRepository;
 
-
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -14,33 +12,35 @@ import java.io.IOException;
 import java.util.List;
 import com.google.gson.Gson;
 
-
 public class ServicoFipe {
-    public static MarcaApiResponse[] buscarFipe(String sufixo) throws Exception{
+    public static MarcaApiResponse[] buscarMontadoras() throws Exception {
 
-        String basePath = String.format("https://parallelum.com.br/fipe/api/v1/carros/%s",sufixo);
+        String basePath = "https://parallelum.com.br/fipe/api/v1/carros/marcas";
 
-        URL url = new URL(basePath);
-        HttpURLConnection conexao = (HttpURLConnection) url.openConnection();
-        BufferedReader resposta = new BufferedReader(new InputStreamReader((conexao.getInputStream())));
-        String jsonEmString = Util.converteJsonEmString(resposta);
+        String response = RequestBuilder(basePath);
 
         Gson gson = new Gson();
-        MarcaApiResponse marcaApiResponse[] = gson.fromJson(jsonEmString, MarcaApiResponse[].class);
+        MarcaApiResponse marcaApiResponse[] = gson.fromJson(response, MarcaApiResponse[].class);
         return marcaApiResponse;
     }
 
-    public static ModeloApiResponse buscarModelo(String numeroModelo) throws Exception{
+    public static ModeloApiResponse buscarModelo(String codigoMontadora) throws Exception {
 
-        String basePath = String.format("https://parallelum.com.br/fipe/api/v1/carros/marcas/%s/modelos",numeroModelo);
+        String basePath = String.format("https://parallelum.com.br/fipe/api/v1/carros/marcas/%s/modelos",
+                codigoMontadora);
 
-        URL url = new URL(basePath);
+        String response = RequestBuilder(basePath);
+
+        Gson gson = new Gson();
+        ModeloApiResponse modeloApiResponse = gson.fromJson(response, ModeloApiResponse.class);
+        return modeloApiResponse;
+    }
+
+    private static String RequestBuilder(String uri) throws Exception {
+        URL url = new URL(uri);
         HttpURLConnection conexao = (HttpURLConnection) url.openConnection();
         BufferedReader resposta = new BufferedReader(new InputStreamReader((conexao.getInputStream())));
         String jsonEmString = Util.converteJsonEmString(resposta);
-
-        Gson gson = new Gson();
-        ModeloApiResponse modeloApiResponse = gson.fromJson(jsonEmString, ModeloApiResponse.class);
-        return modeloApiResponse;
+        return jsonEmString;
     }
 }
