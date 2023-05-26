@@ -1,4 +1,4 @@
-package TP_ES2.Classes;
+package br.com.concessionaria.domain.entity;
 public enum MarcasMoto {
     //será que pode usar marcas reais a título de demonstração?
     BMW,
