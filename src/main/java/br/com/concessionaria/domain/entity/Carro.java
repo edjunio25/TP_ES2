@@ -7,7 +7,7 @@ public class Carro extends Veiculo {
     private int cavalosPotencia;
     private BigDecimal cilindradaEmLitro;
     private Boolean isTurbo;
-    private String tipoRodas;
+    private int tipoRodas;
     private MarcasCarro marca;
 
     public Carro(final int id, 
@@ -17,7 +17,7 @@ public class Carro extends Veiculo {
         final int cavalosPotencia,
         final BigDecimal cilindradaEmLitro,
         final Boolean isTurbo,
-        final String tipoRodas,
+        final int tipoRodas,
         final MarcasCarro marca,
         final int anoFabricacao,
         final LocalDate dataDeEntradaEstoque,
@@ -56,11 +56,11 @@ public class Carro extends Veiculo {
 		this.isTurbo = isTurbo;
 	}
 
-	public String getTipoRodas() {
+	public int getTipoRodas() {
 		return tipoRodas;
 	}
 
-	public void setTipoRodas(String tipoRodas) {
+	public void setTipoRodas(int tipoRodas) {
 		this.tipoRodas = tipoRodas;
 	}
 

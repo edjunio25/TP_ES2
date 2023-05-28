@@ -1,5 +1,5 @@
 
-package br.com.concessionaria;
+package br.com.concessionaria.unidade;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

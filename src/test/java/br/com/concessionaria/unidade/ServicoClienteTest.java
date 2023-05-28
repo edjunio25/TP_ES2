@@ -1,22 +1,31 @@
-package br.com.concessionaria;
+package br.com.concessionaria.unidade;
+
 import br.com.concessionaria.domain.dto.RequisicaoNovoCliente;
 import br.com.concessionaria.domain.entity.Cliente;
 import br.com.concessionaria.domain.entity.Endereco;
+import br.com.concessionaria.repository.RepositorioClientes;
 import br.com.concessionaria.service.ServicoCliente;
 import org.junit.Before;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.Assert.*;
 
 
 public class ServicoClienteTest {
 
-    @Before
+    ServicoCliente servicoTest;
+    Cliente clienteTeste;
+
+    RequisicaoNovoCliente novoCliente;
+
+    @BeforeEach
     public void setUp(){
-        ServicoCliente servicoTest = new ServicoCliente();
+        servicoTest = new ServicoCliente();
         Endereco endereco = new Endereco("Rua A", 10, "Federal", "12.345-678", "MG",
                 "Contagem" );
-        Cliente clienteTeste = new Cliente(12,"Elon", "(31)40028922", endereco, "123.456.789-10");
-        repositorioClientes.adicionarCliente(clienteTeste);
+        clienteTeste = new Cliente(12,"Elon", "(31)40028922", endereco, "123.456.789-10");
+        servicoTest.adicionarCliente(clienteTeste);
         RequisicaoNovoCliente novoCliente;
     }
 
@@ -24,7 +33,7 @@ public class ServicoClienteTest {
     public void testBuscarPorId(){
         int id = clienteTeste.getId();
         Cliente clienteRetornado = servicoTest.buscarPorId(id);
-        assertEquals(clienteRetornado, clienteTeste);
+        Assertions.assertEquals(clienteRetornado, clienteTeste);
     }
 
     @Test
