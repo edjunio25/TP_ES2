@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 
 public class ServicoClienteTest {
@@ -19,14 +19,23 @@ public class ServicoClienteTest {
 
     RequisicaoNovoCliente novoCliente;
 
+    @Before
+
     @BeforeEach
     public void setUp(){
         servicoTest = new ServicoCliente();
         Endereco endereco = new Endereco("Rua A", 10, "Federal", "12.345-678", "MG",
                 "Contagem" );
-        clienteTeste = new Cliente(12,"Elon", "(31)40028922", endereco, "123.456.789-10");
-        servicoTest.adicionarCliente(clienteTeste);
-        RequisicaoNovoCliente novoCliente;
+        clienteTeste = new Cliente(12,"Elon", "(31)40028922", endereco, "12345678910");
+
+        novoCliente = mock(RequisicaoNovoCliente.class);
+        when(novoCliente.getNome()).thenReturn("Elon");
+        when(novoCliente.getTelefone()).thenReturn("(31)40028922");
+        when(novoCliente.getEndereco()).thenReturn(endereco);
+        when(novoCliente.getCpf()).thenReturn("12345678910");
+
+        servicoTest.adicionarCliente(novoCliente);
+
     }
 
     @Test
