@@ -4,12 +4,16 @@ import br.com.concessionaria.domain.entity.*;
 import br.com.concessionaria.service.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+
+//ATENÇÃO
+//Essa classe não tem a intenção de propor testes unitários "úteis",
+//visto que são em sua maioria 'Gets' e 'Sets'
+//Esta classe existe tão somente para demonstração da aplicação do CodeCov
 
 class VendaTest {
     private Venda venda;
