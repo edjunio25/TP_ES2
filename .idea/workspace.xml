@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96c38298-ae8d-494d-8315-873603734d63" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/RepositorioVendasTestOld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/ServicoVendaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/concessionaria/repository/RepositorioClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/concessionaria/repository/RepositorioClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/RepositorioClientesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/RepositorioClientesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/RepositorioVendasTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/RepositorioVendasTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/ServicoClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/ServicoClienteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/VendaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/concessionaria/unidade/VendaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/concessionaria/repository/RepositorioClientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/concessionaria/repository/RepositorioClientes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/concessionaria/unidade/RepositorioClientesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/concessionaria/unidade/RepositorioClientesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/concessionaria/unidade/RepositorioVendasTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/concessionaria/unidade/RepositorioVendasTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="novaVersaoAPI" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="novaVersaoAPI" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Q70qCa6ZP2UDnkHvtDhvI4jYkC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "novaVersaoAPI__Tests__incomplete",
+    "last_opened_file_path": "C:/Users/edson/Desktop/TP_ES2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.concessionaria.service" />
+      <recent name="br.com.concessionaria" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="br.com.concessionaria.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ServicoClienteTest">
+    <configuration name="Run" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="br.com.concessionaria.ConcessionariaApplication" />
+      <module name="concessionaria" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServicoClienteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="concessionaria" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.concessionaria.unidade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.concessionaria.unidade" />
+      <option name="MAIN_CLASS_NAME" value="br.com.concessionaria.unidade.ServicoClienteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="estoque-veiculos-main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="estoque-veiculos-main" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ServicoClienteTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96c38298-ae8d-494d-8315-873603734d63" name="Changes" comment="" />
+      <created>1684689507304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684689507304</updated>
+    </task>
+    <servers />
+  </component>
+</project>
